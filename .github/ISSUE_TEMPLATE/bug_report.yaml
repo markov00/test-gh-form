@@ -28,13 +28,12 @@ body:
   - type: textarea
     attributes:
       label: Steps To Reproduce
-      description: Steps to reproduce the behavior.
+      description: List the steps to reproduce the behavior or paste a [codesandbox](https://codesandbox.io/s/elastic-charts-playground-87y7g?file=/src/App.tsx) example
       placeholder: |
         1. Go to '...' 
         2. Click on '....'
         3. Scroll down to '....'
         4. See error
-        Or use this [codesandbox](https://codesandbox.io/s/elastic-charts-playground-87y7g?file=/src/App.tsx) to create a meaningful reproducible example if it is not possible to reproduce it through storybook or via an online public accessible app
     validations:
       required: false
   - type: textarea
