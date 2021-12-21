@@ -48,7 +48,7 @@ body:
       placeholder: 
     validations:
       required: false
-  - type: input
+  - type: textarea
     attributes:
       label: Kibana Cross Issues
       description: Add any [Kibana](https://github.com/elastic/kibana) related issues here
