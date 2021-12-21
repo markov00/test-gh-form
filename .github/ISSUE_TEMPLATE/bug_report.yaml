@@ -1,0 +1,34 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Describe the issue
+      description: Add a clear and concise description about the issue
+      placeholder: Tell us what you see
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...' 
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+        
+        Or use this [codesandbox](https://codesandbox.io/s/elastic-charts-playground-87y7g?file=/src/App.tsx) to create a meaningful reproducible example if it is not possible to reproduce it through storybook or via an online public accessible app
+    validations:
+      required: false
+ 
