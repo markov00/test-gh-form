@@ -58,10 +58,9 @@ body:
     validations:
       required: false
   - type: checkboxes
-    id: cat-preferences
+    id: checklist
     attributes:
-      label: What kinds of cats do you like?
-      description: You may select more than one.
+      label: Checklist
       options:
         - label: The proper **chart type** label has been added (e.g. `:xy`, `:partition`)
         - label: The proper **feature** labels have been added (e.g. `:interactions`, `:axis`)
