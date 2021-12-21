@@ -1,9 +1,7 @@
 name: Bug Report
 description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
-assignees:
-  - octocat
+title: ""
+labels: ["bug"]
 body:
   - type: markdown
     attributes:
@@ -28,7 +26,7 @@ body:
   - type: textarea
     attributes:
       label: Steps To Reproduce
-      description: List the steps to reproduce the behavior or paste a [codesandbox](https://codesandbox.io/s/elastic-charts-playground-87y7g?file=/src/App.tsx) example
+      description: List the steps or a [Storybook](https://elastic.github.io/elastic-charts) example or a reproducible [codesandbox](https://codesandbox.io/s/elastic-charts-playground-87y7g?file=/src/App.tsx) example
       placeholder: |
         1. Go to '...' 
         2. Click on '....'
@@ -40,6 +38,8 @@ body:
     attributes:
       label: Screenshots
       description: Add screenshots to help explain your problem
+      placeholder: |
+        Paste your screenshots here
     validations:
       required: false      
   - type: textarea
@@ -49,11 +49,11 @@ body:
       placeholder: 
     validations:
       required: false
-  - type: textarea
+  - type: input
     attributes:
       label: Kibana Cross Issues
       description: Add any [Kibana](https://github.com/elastic/kibana) related issues here
-      placeholder: 
+      placeholder: #12345
     validations:
       required: false
   - type: checkboxes
