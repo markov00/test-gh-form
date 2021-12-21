@@ -15,9 +15,16 @@ body:
       label: Describe the issue
       description: Add a clear and concise description about the issue
       placeholder: Tell us what you see
-      value: "A bug happened!"
     validations:
       required: true
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: Describe the expected behaviour
+      description: A clear and concise description of what you expected to happen.
+      placeholder: I was expecting to see
+    validations:
+      required: false
   - type: textarea
     attributes:
       label: Steps To Reproduce
@@ -27,8 +34,36 @@ body:
         2. Click on '....'
         3. Scroll down to '....'
         4. See error
-        
         Or use this [codesandbox](https://codesandbox.io/s/elastic-charts-playground-87y7g?file=/src/App.tsx) to create a meaningful reproducible example if it is not possible to reproduce it through storybook or via an online public accessible app
     validations:
       required: false
- 
+  - type: textarea
+    attributes:
+      label: Screenshots
+      description: Add screenshots to help explain your problem
+    validations:
+      required: false      
+  - type: textarea
+    attributes:
+      label: Additional context and console logs
+      description: Add any other context about the problem and any console error related to the issues
+      placeholder: 
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Kibana Cross Issues
+      description: Add any [Kibana](https://github.com/elastic/kibana) related issues here
+      placeholder: 
+    validations:
+      required: false
+  - type: checkboxes
+    id: cat-preferences
+    attributes:
+      label: What kinds of cats do you like?
+      description: You may select more than one.
+      options:
+        - label: The proper **chart type** label has been added (e.g. `:xy`, `:partition`)
+        - label: The proper **feature** labels have been added (e.g. `:interactions`, `:axis`)
+        - label: Every related Kibana issue is listed under `Kibana Cross Issues` list and the `kibana cross issue` tag is applied
+
